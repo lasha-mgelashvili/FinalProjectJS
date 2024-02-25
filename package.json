@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  },
+  "name": "projectn1",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server -w server.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

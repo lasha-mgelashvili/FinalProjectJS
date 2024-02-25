@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff'),
+        url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Light.eot');
+    src: url('../fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff'),
+        url('../fonts/Rubik-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Protest Revolution';
+    src: url('../ProtestRevolution-Regular.eot');
+    src: url('../ProtestRevolution-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../ProtestRevolution-Regular.woff2') format('woff2'),
+        url('../ProtestRevolution-Regular.woff') format('woff'),
+        url('../ProtestRevolution-Regular.ttf') format('truetype'),;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../Orbitron-Regular.eot');
+    src: url('../Orbitron-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Orbitron-Regular.woff2') format('woff2'),
+        url('../Orbitron-Regular.woff') format('woff'),
+        url('../Orbitron-Regular.ttf') format('truetype'),;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
