@@ -1,0 +1,100 @@
+.game-list {
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.game-title {
+    text-transform: uppercase;
+    margin: auto;
+    color: #fbfeff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Orbitron';
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+.games-main-div {
+    text-align: center;
+}
+.games-main-div {
+    position: relative;
+    display: inline-block;
+}
+.game-info-div {
+    display: none;
+    position: absolute;
+    background: #ff4d55;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+    max-height: 170px;
+    overflow-y: auto;
+
+}
+.games-main-div:hover .game-info-div {
+    display: block;
+    transition: 0.4s;
+}
+.game-image {
+    width: 100%;
+    height: auto;
+    transition: 0.4s;
+}
+.game-info {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins';
+    line-height: 16px;
+    color:  #fbfeff;
+}
+#gameContainer {
+    position: absolute;
+    display: inline-block;
+    padding-top: 73px;
+    z-index: 454545;
+}
+
+#gameList {
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 90909090;
+    gap: 30px;
+    max-height: 200px; 
+    overflow-y: auto;
+    padding-top: 15px;
+}
+
+#gameContainer i {
+    position: absolute;
+    z-index: 11111111111111;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 12px 200px;
+}
+#searchInput {
+    width: 250px;
+    height: 3rem;
+    border: none;
+    
+}
+.search-bar-list {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ccc;
+    font-size: 1.5rem;
+    font-family: 'Rubik';
+}

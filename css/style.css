@@ -19,8 +19,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgb(29 35 82 / 90%);
+    background: rgb(29 35 82 / 50%);
     z-index: 200;
+    transition: 0.4s;
+}
+header.shadow {
+    background: #1d2352;
+    transition: 0.4s;
 }
 .nav {
     max-width: 1200px;
@@ -125,6 +130,10 @@ header {
 .drop-login.drop-login-open {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     transition: 0.4s;
+}
+.login-child {
+    text-align: center;
+    background: #ff8d55;
 }
 /* Burger Bar */
 .burger {
@@ -538,3 +547,268 @@ header {
     font-weight: 600;
     color: #fbfeff;
 }
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin-top: 4rem !important;
+    padding-bottom: 20px;
+}
+.footer-box {
+    display: flex;
+    flex-direction: column;
+}
+.footer-title {
+    font-size: 1.2rem;
+    color: #fbfeff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    font-family: 'Rubik';
+}
+.footer-box a {
+    color: #d4d4d4;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    transition: 0.3s;
+}
+.footer-box a:hover {
+    color: #f8646c;
+    transition: 0.3s;
+}
+.footer-box .footer-logo {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fbfeff;
+    font-family: 'Anta';
+}
+.footer-logo span {
+    color: #ff4d55;
+}
+.social {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.social .bx {
+    font-size: 24px;
+    transition: 0.3s;
+}
+.social, .payments .bx:hover {
+    color: #ff4d55;
+    transition: 0.3s;
+}
+.copyright {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #fbfeff;
+}
+.copyright p {
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+}
+.payments .bx {
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+                                /* Prices Html */
+   /* prices */
+   .prices {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(
+    rgb(23,27,68,87%) 100%,
+    rgb(23,27,68,87%) 100%
+    ), url(..//images/prices-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+   .prices-text {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+   }
+   .prices-head-text {
+    font-family: 'Rubik';
+    font-size: 1.3rem;
+    font-weight: 600;
+   }
+   .prices-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Orbitron';
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+   }
+   .prices-description {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 1.5rem;
+   }
+   .prices-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2rem !important;
+   }
+   .price-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #1d2352;
+    border-radius: 0.4rem;
+    margin-bottom: 5rem;
+    transition: 0.3s;
+   }
+   .price-item:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+   }
+   .price-box-img {
+     display: block;
+     width: 100px;
+     position: relative;
+     margin-top: -64px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .card-info p {
+    margin-top: 0.8rem;
+   }
+   .price-item-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Rubik';
+  }
+  .card-info {
+    font-size: 1rem;
+    color: #d4d4d4;
+    font-family: 'Poppins';
+    margin: 1rem;
+  }
+  .price-info {
+    width: 100%;
+    padding: 8px 0;
+    background: #ff4d55;
+    margin-top: 0.7rem;
+  }
+  .price-info h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+  }
+  .price-info span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    font-family: 'Poppins';
+  }
+  .ram-info {
+    font-size: 1,5rem;
+    text-transform: uppercase;
+    margin: 0.7rem 0 1rem;
+    font-weight: 600;
+    font-family: 'Orbitron';
+    letter-spacing: 2px;
+  }
+  .ram-info span {
+    font-size: 0.8rem;
+    color: #d4d4d4;
+    font-weight: 500;
+  }
+  .plan-btn {
+    padding: 8px 24px;
+    color: #fbfeff;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: #ff4d55;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .plan-btn:hover {
+    background: #f8646c;
+    transition: 0.3s;
+  }
+  
+
+
+
+  .container-cookies {
+    width: 100%;
+    margin: auto;
+    height: 200px;
+  }
+  .subcontainer {
+    width: 85%;
+    margin: auto;
+    padding-top: 90px;
+  }
+  #cookies {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: #fbfeff;
+    background-color: rgba(39, 78, 104, 0.6);
+    z-index: 767676;
+    display: none;
+
+  }
+  .cookies {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .cookies a {
+    color: #ff4d55;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Poppins';
+  }
+  .cookies a:hover {
+    text-decoration: underline;
+    color: #f8646c;
+  }
+  .cookies p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: poppins;
+  }
+  #cookie-btn {
+    display: flex;
+    border-radius: 5px;
+    padding: 8px 12px 8px 12px;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    cursor: pointer;
+    border: none;
+    background: #ff4d55;
+    color: #fbfeff;
+    margin: auto;
+    margin-top: 10px;
+  }
+  /* scrol To Top */
+

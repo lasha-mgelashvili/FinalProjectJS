@@ -25,6 +25,19 @@
 </head>
 
 <body>
+    <!-- Cookies -->
+    <div id="cookies">
+        <div class="container-cookies container">
+            <div class="subcontainer">
+                <div class="cookies">
+                    <p>This website use cookies to ensure you get the best experience on uor website.
+                        <a href="#">more info</a>
+                        <button id="cookie-btn">Accept Cookies!</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header -->
     <header>
         <!-- Nav  -->
@@ -33,11 +46,11 @@
             <a href="index.html" class="logo">Raid <span>Host</span></a>
             <!-- Nav Links -->
             <div class="navbar">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#" class="nav-link">Game Hosting</a></li>
-                <li><a href="#" class="nav-link">Games</a></li>
-                <li><a href="price.Html" class="nav-link">Prices</a></li>
+                <li><a href="games.html" class="nav-link">Games</a></li>
+                <li><a href="prices.Html" class="nav-link">Prices</a></li>
             </div>
             <!-- Login btn -->
             <div class="login-btn">
@@ -52,6 +65,9 @@
                     <div class="drop-item">
                         <a href="#">Game Panel</a>
                         <span>Game Server Management</span>
+                    </div>
+                    <div class="drop-item login-child">
+                        <a href="login.html" class="drop-item">Log in</a>
                     </div>
                 </div>
             </div>
@@ -406,49 +422,53 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="footer container">
-        <div class="footer-box">
-            <a href="index.html" class="footer logo">Raid <span>Host</span></a>
-            <div class="social">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-discord'></i></a>
+    <footer>
+        <div class="footer container">
+            <div class="footer-box">
+                <a href="index.html" class="footer-logo">Raid<span>Host</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-discord'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-title">Server Hosting</h2>
+                <a href="#">Minecraft Hosting</a>
+                <a href="#">Fivem Hosting</a>
+                <a href="#">Rust Hosting</a>
+                <a href="#">VPS Hosting</a>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-title">Company</h2>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Terms Of Service</a>
+                <a href="#">Privacy Police</a>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-title">Support</h2>
+                <a href="#">Submit a Ticket</a>
+                <a href="#">Online Chat</a>
+                <a href="#">Service Status</a>
             </div>
         </div>
-        <div class="footer-box">
-            <h2 class="footer-title">Server Hosting</h2>
-            <a href="#">Minecraft Hosting</a>
-            <a href="#">Fivem Hosting</a>
-            <a href="#">Rust Hosting</a>
-            <a href="#">VPS Hosting</a>
-        </div>
-        <div class="footer-box">
-            <h2 class="footer-title">Company</h2>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Terms Of Service</a>
-            <a href="#">Privacy Police</a>
-        </div>
-        <div class="footer-box">
-            <h2 class="footer-title">Support</h2>
-            <a href="#">Submit a Ticket</a>
-            <a href="#">Online Chat</a>
-            <a href="#">Service Status</a>
-        </div>
-        <div class="copyright container">
+        <div class="copyright  container">
             <p>&#169; RaidHost. All rights reserved. </p>
             <div class="payments">
                 <i class='bx bxl-visa'></i>
-                <i class='bx bxl-mastercard' ></i>
-                <i class='bx bxl-paypal' ></i>
+                <i class='bx bxl-mastercard'></i>
+                <i class='bx bxl-paypal'></i>
             </div>
         </div>
     </footer>
+    <!-- Cookie JS -->
+    <script src="./node_modules/js-cookie/dist/js.cookie.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Link TO JS -->
-    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prices-RaidHost</title>
+    <title>Games-RaidHost</title>
     <!-- link To CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/games.css">
     <!-- BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Hav Icon -->
@@ -37,7 +38,7 @@
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#" class="nav-link">Game Hosting</a></li>
                 <li><a href="games.html" class="nav-link">Games</a></li>
-                <li><a href="prices.html" class="nav-link">Prices</a></li>
+                <li><a href="prices.Html" class="nav-link">Prices</a></li>
             </div>
             <!-- Login btn -->
             <div class="login-btn">
@@ -66,102 +67,86 @@
             </div>
         </div>
     </header>
-    <!-- Price Home -->
-    <section class="prices" id="prices">
-        <div class="prices-text container">
-            <h3 class="prices-head-text">FAST, RELIABLE, AFFORDABLE</h3>
-            <h2 class="prices-title">Minecraft Hosting</h2>
-            <p class="prices-description">RaidHost Hosting offers efficent and affordable Minecraft Hosting with high
-                tech hardware to power your comynity.</p>
-            <a href="#" class="btn">Order Now</a>
+    <!-- Home -->
+    <section class="swiper home" id="home">
+        <div id="gameContainer">
+            <i class='bx bx-search bx-rotate-90 ' ></i>
+            <input type="text" id="searchInput" placeholder="Click to search for a game">
+            <ul id="gameList">
+                <!-- Game names will be dynamically added here -->
+            </ul>
         </div>
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="home-slide">
+                    <img src="images/home-1.jpg" alt="slide img1" class="slide-img">
+                    <div class="home-overlay"></div>
+                    <div class="home-text container">
+                        <h2 class="slide-title">Left 4 Dead <span class="slide-title-span">Hosting</span></h2>
+                        <p class="slide-description">From Valve (the creators of Counter-Strike, Half-Life and more)
+                            comes Left 4 Dead, a co-op action horror game for the PC and Xbox 360 that casts up to four
+                            players in an epic struggle for survival against swarming zombie hordes and terrifying
+                            mutant monsters.
+                        </p>
+                        <a href="#" class="btn">View Plans</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="home-slide">
+                    <img src="images/home-2.jpg" alt="slide img2" class="slide-img">
+                    <div class="home-overlay"></div>
+                    <div class="home-text container">
+                        <h2 class="slide-title"> Garry's Mod <span class="slide-title-span">Hosting</span></h2>
+                        <p class="slide-description">>Garry's Mod is a physics sandbox. There aren't any predefined aims
+                            or
+                            goals. We give you the
+                            tools and leave you to play.
+                        </p>
+                        <a href="#" class="btn">View Plans</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="home-slide">
+                    <img src="images/home-3.jpg" alt="slide img3" class="slide-img">
+                    <div class="home-overlay"></div>
+                    <div class="home-text container">
+                        <h2 class="slide-title"> Minecraft <span class="slide-title-span">Hosting</span></h2>
+                        <p class="slide-description">
+                            Fight your way through an exciting action-adventure game,
+                            inspired by classic dungeon crawlers
+                            and set in the Minecraft universe!
+                        </p>
+                        <a href="#" class="btn">View Plans</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="home-slide">
+                    <img src="images/home-4.jpg" alt="slide img4" class="slide-img">
+                    <div class="home-overlay"></div>
+                    <div class="home-text container">
+                        <h2 class="slide-title"> Counter-Strike <span class="slide-title-span">Hosting</span></h2>
+                        <p class="slide-description">For over two decades, Counter-Strike has offered an elite
+                            competitive
+                            experience, one shaped by
+                            millions of players from across the globe
+                        </p>
+                        <a href="#" class="btn">View Plans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
     </section>
-    <!-- Games Prices  -->
-    <section class="prices-container container" id="prices-container">
-        <!-- Box 1 -->
-        <div class="price-item">
-            <img src="images/price-1.png" alt="price img" class="price-box-img">
-            <div class="card-info">
-                <h3 class="price-item-title">Dirt</h3>
-                <p>∞ Player Slots</p>
-                <p>Unlimited vCores</p>
-            </div>
-            <div class="price-info">
-                <h2>$2.15<span>/mo</span></h2>
-            </div>
-            <h3 class="ram-info">1<span>GB Ram</span></h3>
-            <a href="#" class="plan-btn">Select Plan</a>
-        </div>
-        <!-- Box 2 -->
-        <div class="price-item">
-            <img src="images/price-2.png" alt="price img" class="price-box-img">
-            <div class="card-info">
-                <h3 class="price-item-title">Grass</h3>
-                <p>∞ Player Slots</p>
-                <p>Unlimited vCores</p>
-            </div>
-            <div class="price-info">
-                <h2>$4.25<span>/mo</span></h2>
-            </div>
-            <h3 class="ram-info">2<span>GB Ram</span></h3>
-            <a href="#" class="plan-btn">Select Plan</a>
-        </div>
-        <!-- Box 3 -->
-        <div class="price-item">
-            <img src="images/price-3.png" alt="price img" class="price-box-img">
-            <div class="card-info">
-                <h3 class="price-item-title">Sand</h3>
-                <p>∞ Player Slots</p>
-                <p>Unlimited vCores</p>
-            </div>
-            <div class="price-info">
-                <h2>$8.50<span>/mo</span></h2>
-            </div>
-            <h3 class="ram-info">4<span>GB Ram</span></h3>
-            <a href="#" class="plan-btn">Select Plan</a>
-        </div>
-        <!-- Box 4 -->
-        <div class="price-item">
-            <img src="images/price-4.png" alt="price img" class="price-box-img">
-            <div class="card-info">
-                <h3 class="price-item-title">Stone</h3>
-                <p>∞ Player Slots</p>
-                <p>Unlimited vCores</p>
-            </div>
-            <div class="price-info">
-                <h2>$12.50<span>/mo</span></h2>
-            </div>
-            <h3 class="ram-info">6<span>GB Ram</span></h3>
-            <a href="#" class="plan-btn">Select Plan</a>
-        </div>
-        <!-- Box 5 -->
-        <div class="price-item">
-            <img src="images/price-5.png" alt="price img" class="price-box-img">
-            <div class="card-info">
-                <h3 class="price-item-title">ANDESITE</h3>
-                <p>∞ Player Slots</p>
-                <p>Unlimited vCores</p>
-            </div>
-            <div class="price-info">
-                <h2>$16.50<span>/mo</span></h2>
-            </div>
-            <h3 class="ram-info">8<span>GB Ram</span></h3>
-            <a href="#" class="plan-btn">Select Plan</a>
-        </div>
-        <!-- Box 6 -->
-        <div class="price-item">
-            <img src="images/price-6.png" alt="price img" class="price-box-img">
-            <div class="card-info">
-                <h3 class="price-item-title">REDWOOD</h3>
-                <p>∞ Player Slots</p>
-                <p>Unlimited vCores</p>
-            </div>
-            <div class="price-info">
-                <h2>24.50<span>/mo</span></h2>
-            </div>
-            <h3 class="ram-info">12<span>GB Ram</span></h3>
-            <a href="#" class="plan-btn">Select Plan</a>
-        </div>
+    <!-- Games Section -->
+    <section class="game-section container" id="games">
+        <h2 class="title">Explore new game</h2>        
     </section>
     <!-- Services -->
     <!-- Section 2 -->
@@ -214,50 +199,6 @@
             </div>
         </div>
     </section>
-    <!-- Control Panel -->
-    <section class="control" id="control">
-        <!-- Control Content -->
-        <div class="control-content container">
-            <div class="control-text">
-                <h2 class="control-title">PTERODACTYL CONTROL PANEL</h2>
-                <P>A Panel thats fast and effectian while still sook amazing </P>
-                <div class="control-spec">
-                    <div class="spec-box">
-                        <i class='bx bxs-check-circle'></i>
-                        <span>Mannage all of your Game servers</span>
-                    </div>
-                    <div class="spec-box">
-                        <i class='bx bxs-check-circle'></i>
-                        <span>Pre Made Installer</span>
-                    </div>
-                    <div class="spec-box">
-                        <i class='bx bxs-check-circle'></i>
-                        <span>Fast Responsive Panel</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Control Images -->
-            <div class="control-images swiper">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="control-img-box">
-                            <img src="images/control-panel-1.png" alt="control image">
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="control-img-box">
-                            <img src="images/control-panel-2.png" alt="control image">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
     <!-- Footer -->
     <footer>
         <div class="footer container">
@@ -300,9 +241,11 @@
             </div>
         </div>
     </footer>
+    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Link TO JS -->
-    <script type="module" src="scripts/prices.js"></script>
+    <script type="module" src="scripts/games.js"></script>
 </body>
+
 </html>

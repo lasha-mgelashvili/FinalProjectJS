@@ -1,0 +1,349 @@
+/* basic styles */
+
+section {
+    padding: 4rem 0 3rem;
+}
+img {
+    width: 100%;
+}
+/* Header  */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(29 35 82 / 50%);
+    z-index: 200;
+    transition: 0.4s;
+}
+header.shadow {
+    background: #1d2352;
+    transition: 0.4s;
+}
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.logo {
+    font-family: 'Anta';
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #fbfeff;
+    font-size: 1.9rem;
+}
+.logo span {
+    color: #ff4d55;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+.nav-link {
+    font-family: 'Orbitron';
+    position: relative;
+    font-size: 1rem;
+    color: #fbfeff;
+    font-weight: 500;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #ff4d55; 
+}
+.nav-link:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+.login-btn {
+    font-family: 'Poppins';
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fbfeff;
+    background: #ff4d55;
+    font-weight: 500;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+.login-btn .bx {
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.login-btn:hover {
+    background: #f8646c;
+    transition: 0.3s;
+}
+/* Drop Login */
+.drop-login {
+    position: absolute;
+    top: 115%;
+    right: 0;
+    width: 231px;
+    height: auto;
+    background: #1d2352;
+    box-shadow: 4px 4px 10px 2 px rgb(23 27 38 / 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.3s;
+}
+.drop-login .drop-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+.drop-login .drop-item:Hover {
+    background: #ff4d55;
+    transition: 0.3s;
+}
+.drop-login .drop-item a {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fbfeff;
+}
+.drop-login .drop-item span {
+    font-family: 'Poppins';
+    font-size: 0.9rem; 
+    font-weight: 400; 
+    color: #fbfeff;
+}
+.drop-login.drop-login-open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: 0.4s;
+}
+.login-child {
+    text-align: center;
+    background: #ff8d55;
+}
+/* Burger Bar */
+.burger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+.burgerbar span {
+    display: block;
+    background: #fbfeff;
+    height: 2.5px;
+    width: 25px;
+    transition: 0.3s;
+}
+.burgerbar {
+    margin-right: 50px;
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fbfeff;
+}
+@media( max-width:768px) {
+    .burgerbar {
+        display: block;
+    }
+    .burgerbar.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .burgerbar.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        transition: 0.5s;
+
+    }
+    .burgerbar.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        transition: 0.5s;
+    }
+}
+/* ------------> Login Main Styles <----------------- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(..//images/Login-background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.wrapper {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 50%);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.2s;
+    margin-top: 4rem;
+}
+.wrapper .login-box {
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .icon-close .bx {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2rem;
+    color: #fbfeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    z-index: 567;
+}
+.login-box h2 {
+    font-size: 2rem;
+    color: #162938;
+    text-align: center;
+    font-family: 'Rubik';
+    font-weight: 600;
+}
+.input-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(30%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    font-family: 'Orbitron';
+}
+.input-box label{
+    top: -5px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+    transform: translateY(30%);
+}
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: #162938;
+    line-height: 57px;
+}
+.input-box div {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: #ff8d55;
+    transform: translateY(35px);
+    z-index: 1234;
+    color: red;
+}
+.remember-forgot {
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    align-items: center;
+    margin-top: 2rem;
+}
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: #162938;
+}
+.remember-forgot a:hover,
+.remember-forgot label:hover {
+    color: #f8646c;
+    text-decoration: underline;
+}
+.btn-login-page {
+    width: 100%;
+    height: 45px;
+    background-color: #162938;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fbfeff;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 1.9rem;
+}
+.btn-login-page:hover {
+    background: #494862be;
+    transition: 0.4s;
+}
+.login-register {
+    font-size: 0.9rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: aqua;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.login-register p a {
+    color: #162938;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.login-register p a:hover {
+    color: #494862be;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+.error-text {
+    color: red;
+    position: absolute;
+    transform: translateY(35px);
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Poppins';
+}

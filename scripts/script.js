@@ -1,37 +1,25 @@
+// -------------> Imported js functions <-----------
+import {
+  dropLogin,
+  burger,
+  headerBG,
+  mainSwiper,
+  controlSwiper,
+} from "./form.js";
+
 // Drop Login
+dropLogin();
+// ----------> Burger Bar <---------------
+burger();
+// --------------> Header BG <-----------------
+headerBG();
+//--------------> Main Swiper <--------------
+mainSwiper();
+//------------> Control Swiper <----------------
+controlSwiper();
+// ------------> Scrol To Top <------------
 
-let loginBtn = document.querySelector(".login-btn");
-let dropLogin = document.querySelector(".drop-login");
-
-loginBtn.onclick = () => {
-  dropLogin.classList.toggle("drop-login-open");
-};
-// Burger Open Close
-const burger = document.querySelector(".burgerbar");
-const navMenu = document.querySelector(".navbar");
-burger.addEventListener("click", () => {
-  burger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
-
-
-// Main Swiper
-
-var swiper = new Swiper(".home", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-
-// Accordion
+// --------------> Accordion <--------------
 
 const AccordionItems = document.querySelectorAll(".accordion-item");
 
@@ -59,21 +47,42 @@ const toggleItem = (item) => {
   }
 };
 
-// Control Swiper
+//-------------> Cookies <--------------
 
-    var swiper = new Swiper(".control-images", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+
+function setCookie(cName, cValue, expDays) {
+  let date = new Date();
+  date.setTime(date.getTime() + expDays * 24 * 60 * 60 * 1000); // Fixed the calculation for days
+  const expires = "expires=" + date.toUTCString();
+  document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
+}
+
+function getCookie(cName) {
+  const name = cName + "=";
+  const cDecoded = decodeURIComponent(document.cookie);
+  const cArr = cDecoded.split("; ");
+  let value;
+  cArr.forEach((val) => {
+    if (val.indexOf(name) === 0) value = val.substring(name.length);
+  });
+  return value;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("cookie-btn").addEventListener("click", () => {
+    document.getElementById("cookies").style.display = "none";
+    setCookie("cookie", true, 30);
+  });
+});
+
+function cookieMessage() {
+  if (!getCookie("cookie")) {
+    document.querySelector("#cookies").style.display = "block";
+  }
+}
+
+window.addEventListener("load", cookieMessage);
+
+
+
+
