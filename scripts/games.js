@@ -75,7 +75,7 @@ dropLogin();
 headerBG();
 //------------> Control Swiper <----------------
 mainSwiper();
-//------------> Scroll To Top <-------------
+
 
 //----------> JS Filter<-------------
 
@@ -134,3 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error fetching data:", error));
 });
+
+// ----------> scroll Top <------------
+
+import { scrollTop } from "./form.js";
+scrollTop()

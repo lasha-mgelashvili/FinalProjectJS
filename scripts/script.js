@@ -17,7 +17,6 @@ headerBG();
 mainSwiper();
 //------------> Control Swiper <----------------
 controlSwiper();
-// ------------> Scrol To Top <------------
 
 // --------------> Accordion <--------------
 
@@ -84,5 +83,7 @@ function cookieMessage() {
 window.addEventListener("load", cookieMessage);
 
 
+// ----------> scroll Top <------------
 
-
+import { scrollTop } from "./form.js";
+scrollTop()

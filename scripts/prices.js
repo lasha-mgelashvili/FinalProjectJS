@@ -8,3 +8,8 @@ dropLogin();
 headerBG();
 //------------> Control Swiper <----------------
 controlSwiper();
+
+// ----------> scroll Top <------------
+
+import { scrollTop } from "./form.js";
+scrollTop()

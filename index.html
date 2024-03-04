@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RaidHost</title>
+    <!-- Animated Css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- link To CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -23,8 +25,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 </head>
-
-<body>
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top"><i class='bx bxs-up-arrow'></i></button>
     <!-- Cookies -->
     <div id="cookies">
         <div class="container-cookies container">
@@ -156,7 +158,7 @@
         <h1 class="title">Our Services</h1>
         <div class="services-content">
             <!-- Box 1 -->
-            <div class="ser-box">
+            <div class="ser-box animate__animated animate__bounce">
                 <i class='bx bx-cloud-drizzle bx-sm'></i>
                 <h2 class="ser-box-title">99.9% UPTIME GUARANTE</h2>
                 <p>Unparalleled reliability at (Raid<span>Host</span>) with a 99.9% Uptime Guarantee. Whether it's your
@@ -164,7 +166,7 @@
                     commitment.</p>
             </div>
             <!-- Box 2 -->
-            <div class="ser-box">
+            <div class="ser-box animate__animated animate__bounce">
                 <i class='bx bx-shield-quarter bx-sm'></i>
                 <h2 class="ser-box-title">GUARD PROTECTION</h2>
                 <p>Game servers are protected by military protections. No DDoS attacks can harm the comfort of your
@@ -469,6 +471,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Link TO JS -->
     <script type="module" src="scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -68,4 +68,38 @@ export function mainSwiper() {
   });
 }
 
-//-----------> Scrol To Top <------------
+
+export function scrollTop() {
+  document.addEventListener("DOMContentLoaded", function () {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show or hide the button based on the scroll position
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to the top with smooth animation when the button is clicked
+    scrollToTopBtn.onclick = function () {
+      scrollToTop();
+    };
+
+    // Smooth scroll to the top function
+    function scrollToTop() {
+      var currentPosition =
+        document.documentElement.scrollTop || document.body.scrollTop;
+
+      if (currentPosition > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, currentPosition - currentPosition / 8); // You can adjust the "8" for smoother/faster scrolling
+      }
+    }
+  });
+
+}
