@@ -52,6 +52,11 @@ header.shadow {
     align-items: center;
     column-gap: 1.2rem;
 }
+.nav-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
 .nav-link {
     font-family: 'Orbitron';
     position: relative;
@@ -154,7 +159,6 @@ header.shadow {
     transition: 0.3s;
 }
 .burgerbar {
-    margin-right: 50px;
     display: none;
     cursor: pointer;
 }
@@ -173,12 +177,12 @@ header.shadow {
         opacity: 0;
     }
     .burgerbar.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
         transition: 0.5s;
 
     }
     .burgerbar.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
         transition: 0.5s;
     }
 }
@@ -826,6 +830,7 @@ header.shadow {
     cursor: pointer;
     font-size: 20px;
     transition: background-color 0.3s, visibility 0.3s;
+    z-index: 1234567;
 }
 
 #scrollToTopBtn:hover {
@@ -834,5 +839,136 @@ header.shadow {
 
 #scrollToTopBtn i {
     font-size: 24px;
-}
 
+}
+/* Responsive */
+@media (max-width:1024px) {
+    .container {
+        margin: 0 auto;
+        width: 92%;
+    }
+}
+@media (max-width:768px) {
+    .nav {
+        padding: 14px 0;
+        width: 90%;
+    }
+    section {
+        padding: 3rem 0 2rem;
+    }
+    .home-slide {
+        min-height: 560px;
+    }
+    .games-content {
+        grid-template-rows: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services-content {
+        grid-template-rows: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .game-box-img {
+        height: 160px;
+    }
+    .prices-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+    .prices-title {
+        font-size: 2.8rem;
+    }
+    .burgerbar {
+        z-index: 12345;
+    }
+     .navbar {
+        position: absolute;
+        top: 0%;
+        right: -100%;
+        width: 300px;
+        height: 90vh;
+        background-color: #1d2352;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+     } 
+     .burgerbar.active {
+        display: block;
+     }
+     .navbar.active {
+        right: 0;
+        transition: 0.5s;
+
+     }
+     .nav-menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+     }
+     .login-btn {
+        display: flex;
+        margin: 0 auto;
+     }
+     .drop-login {
+        left: 0 ;
+        background: #171b44;
+     }
+     .nav-link {
+        display: block;
+        margin: 1rem 0;
+     }
+     .home-slide {
+        min-height: 500px;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .slide-title {
+        font-size: 1.7rem;
+    }
+    .slide-description,
+    .ser-box p,
+    .control-text p,
+    .faq-text p {
+        font-size: 0.8rem;
+    }
+    .accordion-header,
+    .accordion-text h2,
+    .control-title{
+        font-size: 1.5rem;
+    }
+    .footer {
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .social {
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .prices-text {
+        padding-top: 3rem;
+        padding-top: 1rem;
+    }
+}
+@media (max-width:480px) {
+    .prices-container {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        margin: auto;
+        text-align: center;
+    }
+    .services-content,
+    .games-content {
+         grid-template-columns: 1fr;
+    }
+    .social {
+        margin: auto;
+        margin-top: 1rem;
+        display: flex;
+        column-gap: 3rem;
+    }
+}

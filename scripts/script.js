@@ -18,6 +18,7 @@ mainSwiper();
 //------------> Control Swiper <----------------
 controlSwiper();
 
+
 // --------------> Accordion <--------------
 
 const AccordionItems = document.querySelectorAll(".accordion-item");

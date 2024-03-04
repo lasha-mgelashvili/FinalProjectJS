@@ -9,6 +9,7 @@ export function burger() {
   });
 }
 
+
 // ---------------> Header BG <--------------------
 
 export function headerBG() {
@@ -68,7 +69,6 @@ export function mainSwiper() {
   });
 }
 
-
 export function scrollTop() {
   document.addEventListener("DOMContentLoaded", function () {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -101,5 +101,4 @@ export function scrollTop() {
       }
     }
   });
-
 }

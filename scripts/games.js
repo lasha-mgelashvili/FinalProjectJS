@@ -116,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       console.log("Data from API:", data);
 
-      // Clear existing list items
       gameList.innerHTML = "";
 
       if (Array.isArray(data.games)) {
