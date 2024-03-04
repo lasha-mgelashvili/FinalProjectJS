@@ -1,8 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ------------> Login Main Styles <----------------- */
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 100vh;
     background: url(..//images/Login-background.jpg) !important;
     background-size: cover;
@@ -17,12 +30,22 @@ body {
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 50%);
     border-radius: 20px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+            box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: hidden;
+    -webkit-transition: height 0.2s;
+    -o-transition: height 0.2s;
     transition: height 0.2s;
     margin-top: 4rem;
 }
@@ -39,9 +62,15 @@ body {
     background: #162938;
     font-size: 2rem;
     color: #fbfeff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom-left-radius: 20px;
     z-index: 567;
 }
@@ -53,8 +82,12 @@ body {
     font-weight: 600;
 }
 .input-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     width: 100%;
     height: 50px;
@@ -65,7 +98,9 @@ body {
     position: absolute;
     top: 50%;
     left: 5px;
-    transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+        -ms-transform: translateY(30%);
+            transform: translateY(30%);
     font-size: 1rem;
     color: #162938;
     font-weight: 500;
@@ -85,7 +120,9 @@ body {
     color: #162938;
     font-weight: 600;
     padding: 0 35px 0 5px;
-    transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+        -ms-transform: translateY(30%);
+            transform: translateY(30%);
 }
 .input-box .icon {
     position: absolute;
@@ -99,7 +136,9 @@ body {
     width: 50px;
     height: 10px;
     background: #ff8d55;
-    transform: translateY(35px);
+    -webkit-transform: translateY(35px);
+        -ms-transform: translateY(35px);
+            transform: translateY(35px);
     z-index: 1234;
     color: red;
 }
@@ -108,10 +147,16 @@ body {
     color: #162938;
     font-weight: 500;
     margin: -15px 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-family: 'Poppins';
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 2rem;
 }
 .remember-forgot label input {
@@ -137,11 +182,15 @@ body {
     font-weight: 600;
     color: #fbfeff;
     cursor: pointer;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
     margin-top: 1.9rem;
 }
 .btn-login-page:hover {
     background: #494862be;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 .login-register {
@@ -155,17 +204,23 @@ body {
 .login-register p a {
     color: #162938;
     font-weight: 600;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 .login-register p a:hover {
     color: #494862be;
     text-decoration: underline;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 .error-text {
     color: red;
     position: absolute;
-    transform: translateY(35px);
+    -webkit-transform: translateY(35px);
+        -ms-transform: translateY(35px);
+            transform: translateY(35px);
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Poppins';

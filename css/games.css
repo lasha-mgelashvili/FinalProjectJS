@@ -1,9 +1,37 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .game-list {
     padding-top: 50px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 1fr 2rem 1fr;
     grid-template-rows: repeat(2, 1fr); 
+    -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr; 
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}.game-list > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}.game-list > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}.game-list > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}.game-list > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}.game-list > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}.game-list > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
 }
 .game-title {
     text-transform: uppercase;
@@ -27,11 +55,14 @@
     position: absolute;
     background: #ff4d55;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
     bottom: 0;
     left: 0;
     width: 100%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
     max-height: 170px;
     overflow-y: auto;
@@ -39,11 +70,15 @@
 }
 .games-main-div:hover .game-info-div {
     display: block;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 .game-image {
     width: 100%;
     height: auto;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 .game-info {
@@ -102,11 +137,13 @@
 /* responsive for games */
 @media (max-width:768px) {
     .game-list {
+        -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width:480px) {
     .game-list {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 }
