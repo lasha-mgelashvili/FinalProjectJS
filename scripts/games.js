@@ -1,3 +1,4 @@
+("use strict");
 fetch("https://lasha-mgelashvili.github.io/gameServerAPI/server.json", {
   method: "GET",
 })
@@ -65,7 +66,7 @@ fetch("https://lasha-mgelashvili.github.io/gameServerAPI/server.json", {
 
 //--------------> Imported JS codes <------------
 
-import { burger, dropLogin, headerBG, mainSwiper,  } from "./form.js";
+import { burger, dropLogin, headerBG, mainSwiper } from "./form.js";
 
 // ----------> Burger Bar <---------------
 burger();
@@ -75,7 +76,6 @@ dropLogin();
 headerBG();
 //------------> Control Swiper <----------------
 mainSwiper();
-
 
 //----------> JS Filter<-------------
 
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gameList.style.display = "none";
   });
 
-  fetch("https://lasha-mgelashvili.github.io/gameServerAPI/server.json") 
+  fetch("https://lasha-mgelashvili.github.io/gameServerAPI/server.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (Array.isArray(data.games)) {
         data.games.forEach((game) => {
           let listItem = document.createElement("li");
-          listItem.classList.add('search-bar-list')
+          listItem.classList.add("search-bar-list");
           listItem.textContent = game.name;
           gameList.appendChild(listItem);
         });
@@ -137,4 +137,4 @@ document.addEventListener("DOMContentLoaded", function () {
 // ----------> scroll Top <------------
 
 import { scrollTop } from "./form.js";
-scrollTop()
+scrollTop();

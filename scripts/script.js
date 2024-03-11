@@ -1,3 +1,4 @@
+("use strict");
 // -------------> Imported js functions <-----------
 import {
   dropLogin,
@@ -17,7 +18,6 @@ headerBG();
 mainSwiper();
 //------------> Control Swiper <----------------
 controlSwiper();
-
 
 // --------------> Accordion <--------------
 
@@ -48,7 +48,6 @@ const toggleItem = (item) => {
 };
 
 //-------------> Cookies <--------------
-
 
 function setCookie(cName, cValue, expDays) {
   let date = new Date();
@@ -83,8 +82,7 @@ function cookieMessage() {
 
 window.addEventListener("load", cookieMessage);
 
-
 // ----------> scroll Top <------------
 
 import { scrollTop } from "./form.js";
-scrollTop()
+scrollTop();

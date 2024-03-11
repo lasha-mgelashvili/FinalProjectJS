@@ -1,3 +1,5 @@
+("use strict");
+
 import { burger, dropLogin, headerBG, controlSwiper } from "./form.js";
 
 // ----------> Burger Bar <---------------
@@ -9,9 +11,7 @@ headerBG();
 //------------> Control Swiper <----------------
 controlSwiper();
 
-
-
 // ----------> scroll Top <------------
 
 import { scrollTop } from "./form.js";
-scrollTop()
+scrollTop();

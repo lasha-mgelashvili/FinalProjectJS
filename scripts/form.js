@@ -1,3 +1,4 @@
+("use strict");
 // ----------------->  Burger Open Close  <-------------------
 
 export function burger() {
@@ -8,7 +9,6 @@ export function burger() {
     navMenu.classList.toggle("active");
   });
 }
-
 
 // ---------------> Header BG <--------------------
 
